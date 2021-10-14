@@ -1,0 +1,82 @@
+.signin {
+  margin-top: 120px;
+  padding:100px 0 150px; /*이렇게 3개가 있는 경우에는 상,중,하로 인식할거야*/
+  background-image: url("../images/signin_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; /*뷰포트에 더 넓은 영역으로 가득 찰 수 있도록*/
+}
+.signin h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.signin__card {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: #f6f5f0;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.3);
+  color: #555;
+}
+.signin__card h2 {
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.signin__card h2 strong {
+  font-weight: 700;
+  color: #006633;
+}
+.signin__card form {
+  padding: 30px 22px;
+}
+.signin__card form input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+/* 아래 type이 들어간 것은 submit만 꾸며주기 위한 것 */
+/* 타입이 submit인 버튼을 만들어 나가는 과정이야 */
+.signin__card form [type="submit"] {
+  background-color: #006633;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.signin__card form p {
+  font-size: 12px;
+  color: #006633;
+  text-align: center;
+}
+.signin__card .actions {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+/*플렉스 그로우는 요소의 증가 범위가 1비율, 기본은 0으로 하는 것임. 효과는?? 버튼이 1:1:1 비율로 만들어 지는 효과가 있어  */
+.signin__card .actions a {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 14px;
+  border-right: 1px solid #ddd;
+}
+/* 제일 마지막 버튼의 우측에는 경계선을 없애버리는거임 ㅁ ㅣ ㅁ ㅣ ㅁ  이렇게되게 */
+.signin__card .actions a:last-child {
+  border-right: none;
+}
+.signin__card .actions a:hover {
+  text-decoration: underline;
+}
